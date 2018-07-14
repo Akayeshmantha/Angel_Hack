@@ -304,6 +304,35 @@ body {
 }
 
 
+.whitec{
+  font-size: 20px!important;
+  color: white!important;
+
+}
+
+.oneCat{
+  min-height: 200px;
+}
+.overlay1{
+  min-height: 200px;
+  background-color:rgba(0,0,0,0.5);
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+}
+
+.text-cat{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.cats{
+  margin-bottom: 20px;
+}
 
 @media only screen and (min-width: 600px) {
   .card {
