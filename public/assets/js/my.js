@@ -58,14 +58,14 @@ $(document).ready(function() {
     var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "http://192.168.8.104:8090/insert",
+  "url": "http://localhost:8090/insert",
   "method": "POST",
   "headers": {
     "content-type": "application/json",
 
   },
   "processData": false,
-  "data": obj
+  "data": JSON.stringify(obj)
 }
 
 $.ajax(settings).done(function (response) {
