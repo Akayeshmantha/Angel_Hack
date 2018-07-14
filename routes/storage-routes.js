@@ -1,9 +1,11 @@
 const express = require('express');
 const router = express.Router();
-
+const BlockChainClient = require('mongodb').MongoClient;
 // const S3_helper = require('../aws/storage/S3Helper');
 const formidable = require('formidable');
 const fs = require('fs');
+const url = 'mongodb://34.240.0.138:27017';
+const dbName = 'bigchain';
 const Helper = require("../aws");
 const ncAWS = Helper.getProvider("AWS", process.env.ncconf);
 const options = {
@@ -69,7 +71,73 @@ router.post('/getObject', function(req, res) {
     });
 });
 
+router.get('/connect', function(req, res) {
+
+
+    BlockChainClient.connect(url, function(err, client) {
+        console.log("Connected successfully to server");
+        const db = client.db(dbName);
+        const collection = db.collection('documents');
+        collection.insert({
+            "title" : "request For laptop",
+            "price" : "12"
+        },function(err,resp){
+            if(err){
+                console.log(err)
+            }else{
+            console.log(resp);}
+        })
+        
+        client.close();
+        res.end('aa');
+    });
+
+
+});
+
+router.get('/getconnect', function(req, res) {
+
+
+    BlockChainClient.connect(url, function(err, client) {
+        console.log("Connected successfully to server");
+        const db = client.db(dbName);
+        const collection = db.collection('documents');
+        collection.find({"title": "request For laptop"}).toArray(function(err,resp){
+            if(err){
+                console.log(err);
+            }
+            console.log(resp);
+        })        
+        client.close();
+        res.end('aa');
+    });
+
+
+});
+
 router.post('/file-upload', function(req, res, next) {
+
+
+    BlockChainClient.connect(url, function(err, client) {
+        console.log("Connected successfully to server");
+        const db = client.db(dbName);
+        const collection = db.collection('documents');
+        collection.insert({
+            "title" : "request For laptop",
+            "price" : "12"
+        },function(err,resp){
+            if(err){
+                console.log(err)
+            }else{
+            console.log(resp);}
+        })
+        
+        client.close();
+        res.end('aa');
+    });
+
+
+
 
     let options = {
         'name': 'ayeshpererk',
