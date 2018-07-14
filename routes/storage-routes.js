@@ -6,7 +6,7 @@ const formidable = require('formidable');
 const fs = require('fs');
 const url = 'mongodb://34.240.0.138:27017';
 const dbName = 'bigchain';
-const Helper = require("../aws");
+const Helper = require("../network-storage");
 const ncAWS = Helper.getProvider("AWS", process.env.ncconf);
 const options = {
   apiVersion: "2016-11-15"
