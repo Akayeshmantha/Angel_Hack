@@ -1,0 +1,114 @@
+/* =============================================================== */
+/* ABOUT US
+/* =============================================================== */
+
+.inner-page {
+  padding-top: 60px;
+}
+.about-intro {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.social-list {
+  margin-top: 20px;
+  a {
+    margin-right: 10px;
+    display: inline-block;
+  }
+}
+.title-1 {
+  font-family: $base-font;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  clear: both;
+}
+.has-lead-para {
+  font-size: 16px;
+  font-weight: 300;
+  p {
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+.about-parallax-bottom {
+  background: url(../../images/bg3.jpg) center center fixed;
+  background-size: cover;
+  padding: 80px 0;
+  display: block;
+  clear: both;
+}
+.parallaxbox {
+  * {
+    color: #fff;
+  }
+  p {
+    color: #e8eced;
+    font-size: 13px;
+    font-weight: unset;
+    line-height: 18px;
+  }
+}
+.icon-box-wrap {
+  margin-bottom: 20px;
+}
+.ln-shadow-box {
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 64px;
+  height: 80px;
+  line-height: 77px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.ln-shadow-radius {
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  font-size: 40px;
+  height: 80px;
+  line-height: 77px;
+  overflow: hidden;
+  text-align: center;
+  width: 80px;
+}
+.title-4 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.faq-panel {
+  .panel-title {
+    font-weight: 600;
+    a::after {
+      font-weight: normal;
+      color: inherit;
+      content: "\f107";
+      float: right;
+      font-family: FontAwesome;
+      font-size: 20px;
+    }
+    a.collapsed::after {
+      content: "\f106";
+    }
+  }
+  .card-header {
+    padding: 20px 25px;
+  }
+}
+.white-box {
+  padding: 10px;
+  background: #fff;
+  border-radius: 3px;
+}
+.address p {
+  margin-bottom: 0;
+}
+.panel-group .panel + .panel {
+  margin-top: 10px;
+}

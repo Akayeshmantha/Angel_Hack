@@ -1,0 +1,221 @@
+/* Helper class */
+.uppercase {
+  text-transform: uppercase;
+}
+
+.relative {
+  position: relative;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-border {
+  border: 0;
+}
+
+.width100, .w100 {
+  width: 100%;
+}
+
+.hw100 {
+  height: 100%;
+  width: 100%;
+}
+
+.dtable {
+  display: table;
+}
+
+.dtable-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+hr.small {
+  background-color: #000;
+  height: 2px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 44px;
+}
+
+.text-hr {
+  margin-bottom: 60px !important;
+  margin-top: 0 !important;
+}
+
+.mt15 {
+  margin-top: 15px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mt5 {
+  margin-top: 5px;
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mb5 {
+  margin-bottom: 5px;
+}
+
+.color-white {
+  color: #fff
+}
+
+.color-danger {
+  color: #E74C3C;
+}
+
+.color-success {
+  color: #2ECC71;
+}
+
+.color-info {
+  color: #e4cb65;
+}
+
+.color-danger {
+  color: #E74C3C;
+}
+
+.link-color {
+  color: #369;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb15 {
+  margin-bottom: 10px;
+}
+.mb20 {
+  margin-bottom: 10px;
+}
+.mb25 {
+  margin-bottom: 10px;
+}
+.mb30 {
+  margin-bottom: 10px;
+}
+.mb40 {
+  margin-bottom: 10px;
+}
+.mb50 {
+  margin-bottom: 10px;
+}
+.mb60 {
+  margin-bottom: 10px;
+}
+
+.hide-visually {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+
+/* =============================================================== */
+/* WEB PAGE PROGRESS BAR CSS
+/* =============================================================== */
+
+.pace .pace-progress {
+  background: #16A085;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  height: 2px;
+  -webkit-transition: width 1s;
+  -moz-transition: width 1s;
+  -o-transition: width 1s;
+  transition: width 1s;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+
+
+/* CSS ANIMATION   */
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-ms-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-o-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.coming-soon-page .landing-intro {
+  -webkit-animation-delay: 0.35s;
+  -moz-animation-delay: 0.35s;
+  animation-delay:  0.35s;
+  -webkit-animation-duration:.35s;
+  -moz-animation-duration:.35s;
+  animation-duration:.35s;
+}
+
+.delay-1 {
+  -webkit-animation-delay: 0.35s;
+  -moz-animation-delay: 0.35s;
+  animation-delay: 0.35s;
+}
+
+.delay-2 {
+  -webkit-animation-delay: .7s;
+  -moz-animation-delay:.7s;
+  animation-delay: .7s;
+}
+
+.delay-3 {
+  -webkit-animation-delay: 1.1s;
+  -moz-animation-delay: 1.1s;
+  animation-delay: 1.1s;
+}
+
+.delay-4 {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}

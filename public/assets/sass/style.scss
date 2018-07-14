@@ -1,0 +1,74 @@
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|Roboto+Condensed:400,300,700,700italic|Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700,400italic,700italic);
+
+// IMPORT vendor/plugins css
+@import url("animate.min.css");
+@import url("../plugins/font-awesome-4.7.0/css/font-awesome.css");
+@import url("fontello.css");
+@import url("../plugins/jquery-nice-select/css/nice-select.css");
+@import url("fileinput.min.css");
+@import url("../plugins/flag-icon-css-master/css/flag-icon.css");
+
+// ----------------------------------------------------------------------
+  // Base
+// ----------------------------------------------------------------------
+@import "plugin/breakpoint-sass/breakpoint";
+@import "variables";
+@import "mixins";
+
+// Note:
+// We are using Bootstrap 4 sass as a vendor scss
+// We are not using any core bootstrap sass we only using mixin and helper component to write better sass
+
+// Reset and dependencies
+
+@import "vendor-base/normalize";
+
+// Core CSS
+@import "vendor-base/reboot";
+@import "vendor-base/type";
+@import "vendor-base/forms";
+
+@import "base/extends";
+@import "base/reset";
+@import "base/helperclass";
+@import "base/buttons";
+@import "base/form";
+@import "base/typography";
+@import "base/customs_content_bs";
+
+
+
+// ----------------------------------------------------------------------
+  // Modules
+// ----------------------------------------------------------------------
+@import "modules/header";
+@import "modules/footer";
+
+// ----------------------------------------------------------------------
+// Page
+// ----------------------------------------------------------------------
+
+@import "pages/home";
+@import "pages/category";
+@import "pages/adsdetails";
+@import "pages/account";
+@import "pages/about";
+@import "pages/contact";
+@import "pages/blog";
+@import "pages/jobs";
+@import "pages/sellerProfile";
+@import "pages/golobal";
+@import "pages/customeRsonsive";
+@import "pages/demo";
+
+
+
+// Utility classes
+@import "utilities";
+
+// shadow
+@import "base/longshadow";
+

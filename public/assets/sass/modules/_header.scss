@@ -1,0 +1,462 @@
+/* ================================================================== */
+/* CUSTOMIZE NAVBAR
+/* ================================================================== */
+
+%logo-title {
+  font-family: $logo-font ;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #16a085;
+  @include breakpoint($xxs-only) {
+    font-size: 20px;
+  }
+}
+
+
+%intro-title {
+  color: #fff;
+  font-family: $base-font;
+  font-size: 44px;
+  line-height: 42px;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+  margin-bottom: 10px;
+  padding-bottom: 0;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  transition: font 400ms cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+  html[dir="rtl"] body & {
+    font-family: 'Cairo', sans-serif;
+    line-height: 1.4;
+  }
+}
+
+//.search-row .search-col .form-control, .search-row button.btn-search
+%search_input {
+  border-radius: 0;
+  border: 0;
+  height: 48px;
+  margin-bottom: 0;
+}
+
+
+.ln-shadow-logo {
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  font-size: 100%;
+  height: 52px;
+  line-height: 50px;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+  width: 52px;
+  margin-top: -8px;
+  transition: all 0.25s ease;
+  transform: scale(1);
+  @include breakpoint($xxs-only) {
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    width: 40px;
+    margin-top: -8px;
+  }
+}
+
+
+.logo {
+  @extend %logo-title;
+  span {
+    font-weight: lighter;
+  }
+  &:hover {
+    .ln-shadow-logo {
+      @extend %ln-shadow-logo
+    }
+  }
+}
+
+.logo-title {
+  @extend %logo-title;
+  @include breakpoint($md) {
+    padding-top: 20px;
+  }
+  @include breakpoint($sm-only) {
+    padding-top: 18px;
+  }
+  span {
+    font-weight: lighter;
+  }
+  @include breakpoint($xxs-only) {
+    height: auto;
+  }
+}
+
+.navbar-header img {
+  max-height: 90px;
+}
+
+
+.navbar-site.navbar {
+  transition: all 0.25s ease-out 0s;
+  margin-top: 0;
+  z-index: 100;
+  &.stuck {
+    margin-top: -80px;
+    @include breakpoint($sm-only) {
+      margin-top: 0;
+    }
+  }
+   .navbar-nav {
+    > li {
+      &.postadd {
+        a.nav-link {
+          color: #fff ;
+          @include hover-focus {
+            color: #fff ;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-header {
+    min-height: 80px;
+    border-bottom: $border;
+  }
+  .navbar-nav {
+    &.navbar-left {
+      margin-top: 0;
+    }
+    &.navbar-right {
+      .dropdown .icon-down-open-big.fa {
+        display: inline-block;
+      }
+    }
+
+  }
+  .dropdown{
+    .down-open-big {
+      display: inline;
+    }
+    &.lang-menu {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+
+  @include breakpoint($mobile) {
+      background:  #fff;
+      border-radius: 0;
+      height: auto;
+      margin-bottom: 0 !important;
+      padding: 0;
+
+      >.container {
+        display: block;
+        justify-content: safe !important;
+      }
+
+      .navbar-collapse {
+        padding: 15px;
+      }
+
+      .navbar-identity {
+        display: block;
+        height: 80px;
+        padding:0 15px ;
+        border-bottom: solid 1px #ddd;
+        .btn, .navbar-toggler {
+          margin-top: 18px;
+          padding: 0 10px;
+          height: 40px;
+        }
+      }
+
+      .nav {
+        > li, >.nav-item {
+          padding: 3px 0;
+          a:not(.btn) {
+            color: #333;
+          }
+
+
+          .dropdown-menu {
+
+            > li {
+              font-size: 13px;
+              &.active {
+                background: #eeeeee;
+                font-weight: bold;
+                color: #2a3744;
+              }
+            }
+          }
+        }
+      }
+
+
+      button.flag-menu {
+        display: inline-block;
+        float: right;
+        position: relative;
+        margin-right: 10px;
+        .flag-menu .flag-icon {
+          width: 22px;
+          height: 16px;
+        }
+      }
+    }
+
+
+
+  @include breakpoint($xxs-only) {
+   .navbar-identity {
+        height: 75px;
+        .btn, .navbar-toggler {
+          margin-top: 13px;
+        }
+        .logo-title {
+          padding-top: 22px;
+        }
+   }
+  }
+
+}
+
+
+@include breakpoint($sm-min) {
+  // min-width 768px
+  .logo {
+    height: 80px;
+    line-height: normal;
+  }
+  .header {
+    height: auto;
+    background: #fff;
+  }
+  .navbar-site {
+    margin-bottom: 0 !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: auto;
+    background: #fff;
+    border-radius: 0;
+    border-bottom: $border;
+  }
+
+  .navbar-site .navbar-nav, .navbar-light .navbar-nav {
+    > li {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      > a:not(.btn), .nav-link:not(.btn) {
+        border-radius: 3px;
+        box-sizing: border-box;
+        color: #333;
+        font-size: 12px;
+        height: 40px;
+        line-height: 1;
+        padding: 12px 10px;
+        &:hover {
+          color: #000;
+        }
+      }
+      &.postadd {
+        padding-left: 15px;
+        margin-left: 5px;
+        border-left: $border;
+        a {
+          border-radius: 3px;
+          box-sizing: border-box;
+          color: #fff;
+          font-size: 12px;
+          height: 40px;
+          line-height: normal;
+          padding: 12px 0;
+          text-transform: uppercase;
+          width: 130px;
+        }
+      }
+      &.lang-menu {
+        margin-left: 5px;
+        font-size: 12px;
+        height: 40px;
+        line-height: normal;
+        .btn {
+          height: 40px;
+          line-height: normal;
+          padding: 12px;
+          font-size: 12px;
+          font-family: $base-font-condensed;
+        }
+        .caret {
+          margin-left: 3px;
+        }
+      }
+
+
+      .btn-post {
+
+        // fix override by bootstrap css
+        &:focus,
+        &.focus {
+          background-color: darken($btn-danger-bg, 10%);
+          border-color: darken($btn-danger-border, 25%);
+        }
+        &:hover {
+          background-color: darken($btn-danger-bg, 10%);
+          border-color: darken($btn-danger-border, 25%);
+        }
+      }
+    }
+    .show > a {
+      background: none;
+      &:hover {
+        background: none;
+      }
+      &:focus {
+        background: none;
+      }
+    }
+  }
+  .lang-menu {
+    .dropdown.show .dropdown-menu {
+    }
+    .dropdown-menu .flag-icon {
+      margin-right: 5px;
+    }
+  }
+  li {
+    .user-menu {
+      padding: 0;
+      transition: all 0.2s linear 0s;
+      li {
+
+
+        a {
+          font-size: 11px;
+          letter-spacing: 0.55px;
+          clear: both;
+          display: block;
+          font-weight: 400;
+          line-height: 1.42857;
+          padding: 5px 10px;
+          text-transform: inherit;
+          white-space: nowrap;
+        }
+        i {
+          margin-right: 5px;
+          color: #999999;
+          font-size: 120%;
+          transition: all 0.2s linear 0s;
+        }
+        &:hover i {
+          color: #2a3744;
+        }
+      }
+    }
+    &.show .user-menu {
+      padding: 0;
+    }
+    .dropdown-menu.user-menu > .active > a {
+      background: #eeeeee;
+      font-weight: bold;
+      color: #2a3744;
+    }
+    &.dropdown-item.active, &.dropdown-item:active {
+        background: #eeeeee;
+        font-weight: bold;
+        color: #2a3744;
+    }
+  }
+  .nav > li {
+    &.active {
+      background: none;
+    }
+    > a {
+      &:hover {
+        background: none;
+      }
+      &:focus {
+        background: none;
+      }
+    }
+    &:hover > a {
+      background: none;
+    }
+  }
+  .navbar-default .navbar-nav > .open > a {
+    background: none;
+    &:hover {
+      background: none;
+    }
+    &:focus {
+      background: none;
+    }
+  }
+
+  .dropdown-menu {
+    > li {
+      padding: 4px 8px;
+      a {
+        color: #333;
+      }
+    }
+    &.user-menu > .active  {
+      background: #eeeeee;
+      font-weight: bold;
+      color: #2a3744;
+    }
+  }
+
+  .dropdown-menu.user-menu > .active > a:focus {
+    background: #eeeeee;
+    font-weight: bold;
+    color: #2a3744;
+  }
+}
+
+
+.dropdown.no-arrow {
+  > a {
+    &:after {
+      display: none !important;
+    }
+  }
+}
+
+
+/* LANGUAGE */
+
+.flag-menu .flag-icon {
+  width: 24px;
+  height: 18px;
+}
+.navbar-nav .flag-menu a {
+  padding: 8px 10px;
+  font-family: $base-font-condensed;
+}
+.modalHasList .flag-icon {
+  margin-bottom: 4px;
+  margin-right: 5px;
+}
+@include breakpoint($mobile) {
+  .modalHasList {
+    .cat-list {
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+  }
+  .navbar-nav .flag-menu a {
+    font-size: 12px;
+    padding-left:  15px;
+  }
+  .flag-menu .flag-icon {
+    width: 20px;
+    height: 14px;
+  }
+}
