@@ -1,0 +1,34 @@
+{
+  "name": "nodeapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "amazon-cognito-identity-js": "^2.0.3",
+    "aws-sdk": "^2.216.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.15.4",
+    "formidable": "^1.2.1",
+    "jest": "^23.3.0",
+    "nconf": "0.8.4",
+    "node-fetch": "^2.1.2",
+    "path": "^0.12.7",
+    "redis": "^2.6.5",
+    "s": "^0.1.1",
+    "superagent": "^3.8.2"
+  },
+  "scripts": {
+    "deploy": "gcloud app deploy",
+    "start": "node app.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "jest": {
+    "testResultsProcessor": "jest-sonar-reporter"
+  },
+  "devDependencies": {
+    "jest-sonar-reporter": "^2.0.0"
+  }
+}
