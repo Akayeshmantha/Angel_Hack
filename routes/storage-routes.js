@@ -71,17 +71,14 @@ router.post('/getObject', function(req, res) {
     });
 });
 
-router.get('/connect', function(req, res) {
+router.post('/insert', function(req, res) {
 
 
     BlockChainClient.connect(url, function(err, client) {
         console.log("Connected successfully to server");
         const db = client.db(dbName);
         const collection = db.collection('documents');
-        collection.insert({
-            "title" : "request For laptop",
-            "price" : "12"
-        },function(err,resp){
+        collection.insert(req.body,function(err,resp){
             if(err){
                 console.log(err)
             }else{
