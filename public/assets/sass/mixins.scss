@@ -1,0 +1,96 @@
+//------ SASS  Mixins ---------------------------------------------
+
+
+// Toggles
+//
+// Used in conjunction with global variables to enable certain theme features.
+
+@mixin box-shadow($shadow...) {
+  @if $enable-shadows {
+    box-shadow: $shadow;
+  }
+}
+
+@mixin transition($transition...) {
+  @if $enable-transitions {
+    transition: $transition;
+  }
+}
+
+// ----------------------------------------------------------------------
+
+  // Animation
+
+// ----------------------------------------------------------------------
+@import "mixins/single-transform";
+@import "mixins/transform";
+@import "mixins/transitions";
+@import "mixins/translate";
+
+
+
+// ----------------------------------------------------------------------
+
+  // Layout
+
+// ----------------------------------------------------------------------
+
+@import "mixins/clearfix";
+@import "mixins/retina";
+
+// ----------------------------------------------------------------------
+
+  // Styles
+
+// ----------------------------------------------------------------------
+
+@import "mixins/rounded-corners";
+@import "mixins/text-shadow";
+@import "mixins/triangles";
+@import "mixins/long-shadow";
+
+// BOOTSTRAP MIXIN
+// we do not override bootstrap main sass
+// we only use bootstrap mixin & variable to customize button and other elements
+
+
+// Utilities
+@import "vendor-base/mixins/breakpoints";
+@import "vendor-base/mixins/hover";
+@import "vendor-base/mixins/image";
+@import "vendor-base/mixins/badge";
+@import "vendor-base/mixins/resize";
+@import "vendor-base/mixins/screen-reader";
+@import "vendor-base/mixins/size";
+@import "vendor-base/mixins/reset-text";
+@import "vendor-base/mixins/text-emphasis";
+@import "vendor-base/mixins/text-hide";
+@import "vendor-base/mixins/text-truncate";
+@import "vendor-base/mixins/transforms";
+@import "vendor-base/mixins/visibility";
+
+// // Components
+@import "vendor-base/mixins/alert";
+@import "vendor-base/mixins/buttons";
+@import "vendor-base/mixins/cards";
+@import "vendor-base/mixins/pagination";
+@import "vendor-base/mixins/lists";
+@import "vendor-base/mixins/list-group";
+@import "vendor-base/mixins/nav-divider";
+@import "vendor-base/mixins/forms";
+@import "vendor-base/mixins/table-row";
+
+// // Skins
+@import "vendor-base/mixins/background-variant";
+@import "vendor-base/mixins/border-radius";
+@import "vendor-base/mixins/gradients";
+
+// // Layout
+@import "vendor-base/mixins/clearfix";
+
+
+
+// ----------------------------------------------------------------------
+  // Values
+// ----------------------------------------------------------------------
+@import "mixins/rem";

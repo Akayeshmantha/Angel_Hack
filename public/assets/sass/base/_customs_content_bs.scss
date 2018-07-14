@@ -1,0 +1,18 @@
+label {
+  font-weight: 500;
+}
+.card {
+    .card-header {
+      .card-title {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        a {
+          display: block;
+        }
+      }
+    }
+}
+
+.panel-group .card + .card {
+  margin-top: 10px;
+}

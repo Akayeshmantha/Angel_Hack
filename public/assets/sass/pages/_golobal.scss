@@ -1,0 +1,362 @@
+// BS3 ==> BS4
+img {
+  max-width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+
+.float-right,.pull-right {
+  float: right;
+}
+
+.float-left,.pull-left {
+  float: left;
+}
+
+.d-inline-b {
+  display: inline-block;
+}
+
+.btn-block{
+  &-sm {
+    @include breakpoint($sm-only) {
+      display: block !important;
+      width: 100%;
+    }
+  }
+
+  &-md {
+    @include breakpoint($md-max) {
+      display: block !important;
+      width: 100%;
+    }
+  }
+
+}
+
+.hidden, .hide {
+  display: none;
+  @include breakpoint($md-max) {
+    &-md {
+      display: none !important
+    }
+  }
+  @include breakpoint($sm-max) {
+    &-sm {
+      display: none !important
+    }
+  }
+  @include breakpoint($sm-max) {
+    &-xs {
+      display: none !important
+    }
+  }
+}
+
+
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+  >  li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+.label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+  &-default {
+    background-color: #777;
+  }
+}
+
+.panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  &-body {
+    padding: 15px;
+  }
+  &-details {
+    border: solid 1px #ddd;
+    background: #f8f8f8;
+    position: relative;
+    font-size: 13px;
+    ul li {
+      margin-bottom: 3px;
+      font-family: $base-font-condensed;
+      strong {
+        font-weight: bolder;
+        text-transform: uppercase;
+        margin-right: 3px;
+      }
+    }
+  }
+}
+
+
+@include breakpoint(577px 980px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+
+// BS Slider
+.carousel-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  background-color: rgba(0, 0, 0, 0);
+  filter: alpha(opacity=50);
+  opacity: .5;
+
+  &.left {
+    @include gradient-x(rgba(0,0,0,.5),rgba(0,0,0,.001));
+    &:hover {
+      @include gradient-x(rgba(0,0,0,.6),rgba(0,0,0,.009));
+    }
+  }
+  &.right {
+    left: auto;
+    right: 0;
+    color: #fff;
+    @include gradient-x(rgba(0,0,0,.001),rgba(0,0,0,.5));
+    &:hover {
+      @include gradient-x(rgba(0,0,0,.011),rgba(0,0,0,.6));
+    }
+  }
+
+  // Hover/focus state
+  &:hover,
+  &:focus {
+    outline: 0;
+    text-decoration: none;
+
+  }
+
+  // Toggles
+  .icon-prev,
+  .icon-next,
+  .glyphicon-chevron-left,
+  .glyphicon-chevron-right {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    z-index: 5;
+    display: inline-block;
+  }
+  .icon-prev,
+  .glyphicon-chevron-left {
+    left: 50%;
+    margin-left: -10px;
+  }
+  .icon-next,
+  .glyphicon-chevron-right {
+    right: 50%;
+    margin-right: -10px;
+  }
+  .icon-prev,
+  .icon-next {
+    width:  20px;
+    height: 20px;
+    line-height: 1;
+    font-family: serif;
+  }
+  .icon-prev {
+    &:before {
+      content: '\2039';// SINGLE LEFT-POINTING ANGLE QUOTATION MARK (U+2039)
+    }
+  }
+  .icon-next {
+    &:before {
+      content: '\203a';// SINGLE RIGHT-POINTING ANGLE QUOTATION MARK (U+203A)
+    }
+  }
+}
+
+.tooltip-inner {
+  font-family: $base-font-condensed !important;
+  font-size: 12px !important;
+}
+
+
+
+
+// TEMPLATE FIX FOR Bootstrap 4
+
+#wrapper {
+  padding-top: 80px;
+  @include breakpoint($xxs-only) {
+    padding-top: 75px;
+  }
+}
+
+.locations-list.list-filter {
+    .float-right {
+      float: right;
+    }
+}
+
+.cat-pag {
+  display: inline-block;
+}
+
+/* TERMS & CONDITION */
+
+.container-content {
+    display: block;
+    clear: both;
+}
+ul.list-number {
+    margin-left: 30px;
+    li {
+        list-style: unset none decimal;
+    }
+}
+
+// DEMO PANEL
+
+.themeControll {
+    background: #2d3e50;
+    height: auto;
+    width: 170px;
+    position: fixed;
+    left: 0;
+    padding: 20px 0 0;
+    top: 100px;
+    z-index: 999999;
+    transform: translateX(0);
+    opacity: 1;
+    filter: none;
+    transition: opacity .5s linear, transform .7s cubic-bezier(.56, .48, 0, .99);
+    &.active {
+        display: block;
+        transform: translateX(-170px);
+        transition: opacity .5s linear, transform .7s cubic-bezier(.56, .48, 0, .99);
+    }
+    h3 > a {
+        color: white;
+        font-size: 14px;
+    }
+
+    .linkinner a {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 0;
+        clear: both;
+        color: $white;
+        display: block;
+        font-size: 13px;
+        height: auto;
+        line-height: 16px;
+        margin-bottom: 5px;
+        padding-bottom: 8px;
+        padding-left: 10px;
+        text-transform: capitalize;
+        width: auto;
+        font-family: $base-font-condensed;
+    }
+    .nicescroll-cursors {
+        background-color: rgba(255, 255, 255,0.75) !important;
+        border: 1px solid rgba(255, 255, 255,0.9)  !important;
+    }
+}
+.tbtn {
+    background: #2d3e50;
+    color: $white !important;
+    font-size: 30px;
+    height: auto;
+    padding: 10px;
+    position: absolute;
+    right: -40px;
+    top: 0;
+    width: 40px;
+    cursor: pointer;
+}
+.linkinner {
+    display: block;
+    height: 400px;
+    margin-top: 15px;
+    overflow-y: auto;
+    padding-bottom: 15px;
+    padding-right: 10px;
+
+}
+.linkScroll {
+    .scroller-bar {
+        width: 17px;
+        background: #1d2e40 !important;
+        border-color: #1d2e40 !important;
+    }
+    .scroller-track {
+        background: #1d2e40 !important;
+        border-color: #1d2e40 !important;
+    }
+}
+@media(max-width: 780px) {
+    .themeControll {
+        display: none;
+    }
+}
+
+.card-elements {
+  hr {
+    margin: 30px 0;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+table.checkboxtable {
+  td,th {
+    border-top: solid 1px #ddd;
+  }
+}
+
+@include breakpoint($sm) {
+  .form-horizontal {
+    .col-form-label {
+      text-align: right;
+    }
+  }
+}

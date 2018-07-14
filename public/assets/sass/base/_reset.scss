@@ -1,0 +1,94 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
+  color: $body-color;
+  background-color: $body-bg;
+  position: relative;
+}
+
+
+body, html, #wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+   @include rem("font-size", $base-font-size);
+}
+
+
+a {
+  color: $link-color;
+  outline: 0;
+  cursor: pointer;
+  transition: all 0.2s linear 0s, letter-spacing 0s linear 0s;
+  &:focus, &:hover, &:active {
+    outline: none;
+    text-decoration: none;
+    color:$link-hover-color;
+  }
+}
+
+*{
+  outline:0;
+  &:hover,&:focus{
+    outline:0;
+  }
+}
+
+ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+ul li {
+  margin:0;
+  padding:0;
+}
+
+ol {
+  margin:0;
+  padding:0;
+}
+
+p {
+  padding:0;
+  //@include rem("margin", 0, 0, 5, 0);
+}
+
+fieldset {
+  border:none;
+  margin:0;
+  padding:0;
+}
+
+button {
+  cursor:pointer;
+}
+
+%clearfix {
+  @include clearfix();
+}
+
+
+
+

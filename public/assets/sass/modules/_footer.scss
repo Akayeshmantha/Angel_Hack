@@ -1,0 +1,171 @@
+/* =============================================================== */
+/* FOOTER
+/* =============================================================== */
+.footer {
+  background: #fff;
+  border-top: $border;
+  padding: 30px 0;
+  font-size: 12px;
+  color: #4e575d;
+  letter-spacing: 0.5px;
+}
+@media(max-width: 767px) {
+  .footer ul {
+    float: none;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    &:last-child {
+      margin-top: 20px;
+    }
+  }
+}
+
+.footer-content {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  padding: 40px 0;
+  color: #333;
+  background: $footer-bg;
+}
+@media only screen and(max-width: 767px) {
+  .footer-content {
+    padding: 5px 0 5px;
+  }
+  .footer-title {
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
+  .app-icon {
+    margin: 0 0 10px;
+    display: block;
+  }
+  .search-trigger {
+    color: #333;
+  }
+  .paymanet-method-logo img {
+    display: inline-block;
+    height: 20px;
+    margin: 0 2px;
+  }
+}
+.footer-title {
+  color: #000;
+  font-family: $base-font-condensed;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 0;
+  text-transform: uppercase;
+  @include breakpoint($mobile){
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
+}
+.footer-logo {
+  padding-top: 10%;
+  a {
+    display: block;
+  }
+}
+.copy-info {
+  display: block;
+  font-size: 11px;
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+.paymanet-method-logo {
+  border-top: $border;
+  border-bottom: $border;
+  color: #888;
+  font-size: 11px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  padding: 20px 0;
+  text-transform: uppercase;
+  img {
+    display: inline-block;
+    margin: 0 5px;
+    height: 30px;
+  }
+  @include breakpoint($mobile) {
+    padding: 15px 0;
+    img {
+      height: 24px;
+      margin-bottom: 5px;
+    }
+  }
+}
+.footer-nav-inline {
+  li a {
+    color: #333;
+    font-size: 16px;
+  }
+  &.social-list-color li a {
+    color: #fff;
+    font-size: 14px;
+    width: 28px;
+    display: inline-block;
+    text-align: center;
+    padding: 3px 0;
+  }
+}
+.icon-color {
+  &.fb {
+    background: #3b5998;
+  }
+  &.tw {
+    background: #55acee;
+  }
+  &.gp {
+    background: #dd4b39;
+  }
+  &.lin {
+    background: #007bb5;
+  }
+  &.pin {
+    background: #cb2027;
+  }
+}
+.app-icon {
+  display: block;
+  max-width: 100%;
+}
+.hero-subscribe {
+  margin-top: 30px;
+  #newsletter-signup {
+    .form-control {
+      height: 36px;
+      border-radius: 0;
+    }
+    .btn {
+      border-radius: 0;
+      background: #3a3a3a;
+    }
+  }
+}
+.footer-nav li a {
+  border-left: $border;
+  padding: 0;
+  color: #333;
+  font-size: 12px;
+  &:first-child {
+    border-left: 0;
+  }
+  &:hover {
+    opacity: .6;
+  }
+}
+.footer-address li {
+  line-height: 14px;
+  list-style: outside none none;
+  margin-bottom: 5px;
+}
+.isios.product-story {
+  background-size: cover !important;
+  background-attachment: scroll !important;
+  background-position: top center !important;
+}

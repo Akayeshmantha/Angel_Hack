@@ -1,0 +1,117 @@
+@function makelongshadow($color) {
+  $val: 0px 0px $color;
+  @for $i from 1 through 200 {
+    $val: #{$val}, #{$i}px #{$i}px #{$color};
+  }
+  @return $val;
+}
+
+@function makelongshadowhover($color) {
+  $val: 10px 10px $color;
+  @for $i from 0 through 800 {
+    $val: #{$val}, #{$i}px #{$i}px #{$color};
+  }
+  @return $val;
+}
+
+@mixin longshadowhover($color) {
+  text-shadow: makelongshadowhover($color);
+}
+
+
+@mixin longshadow($color) {
+  text-shadow: makelongshadow($color);
+}
+
+
+
+.shape {
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 28px;
+  height: 42px;
+  line-height: 40px;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+  width: 42px;
+}
+
+%ln-shadow-logo {
+  transition: text-shadow 0.25s ease ;
+  background-color: $brand-primary;
+  @include longshadow(darken($brand-primary, 10% ));
+}
+
+
+.ln-shadow {
+  background-color: $brand-primary;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 28px;
+  height: 42px;
+  line-height: 40px;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+  width: 42px;
+  @include longshadow(darken($brand-primary, 5% ));
+}
+
+.shape-0, .ln-shadow-logo {
+  background-color: $brand-primary;
+  @include longshadow(darken($brand-primary, 5% ));
+}
+
+.shape-1 {
+  background-color: $brand-success;
+  @include longshadow(darken($brand-success, 5% ));
+}
+
+.shape-2 {
+  background-color: $brand-danger;
+  @include longshadow(darken($brand-danger, 5% ));
+}
+
+.shape-3 {
+  background-color: $brand-info;
+  @include longshadow(darken($brand-info, 5% ));
+}
+
+.shape-4 {
+  background-color: $brand-warning;
+  @include longshadow(darken($brand-warning, 5% ));}
+
+.shape-5 {
+  background-color: $brand-danger;
+  @include longshadow(darken($brand-danger, 5% ));
+}
+
+.shape-6 {
+  background-color: $brand-inverse;
+  @include longshadow(darken($brand-inverse, 5% ));
+}
+
+.shape-7 {
+  @include longshadow(darken($pink, 5% ));
+  background-color: $pink;}
+
+.shape-8 {
+  @include longshadow(darken($yellow, 5% ));
+  background-color: $yellow;}
+
+.shape-9 {
+  @include longshadow(darken($teal, 5% ));
+  background-color: $teal;
+}
+
+.shape-10 {
+  @include longshadow(darken($purple, 5% ));
+  background-color: $purple;}
+
+.shape-11 {
+  @include longshadow(darken($pink, 5% ));
+  background-color: $pink;
+}

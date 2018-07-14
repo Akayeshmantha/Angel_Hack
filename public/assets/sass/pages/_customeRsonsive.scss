@@ -1,0 +1,262 @@
+@media(max-width: 991px) {
+  .list-title a {
+    font-size: 16px;
+  }
+}
+
+@media(max-width: 979px) {
+  .intro {
+    height: 300px;
+  }
+
+  .page-sidebar {
+    //padding: 0 5px;
+  }
+  .inner-box {
+    padding: 20px 10px;
+  }
+  .user-panel-sidebar ul li a {
+    padding: 5px 4px;
+    font-size: 11px;
+  }
+}
+
+@media(min-width: 768px) {
+  .btn-cat-collapsed {
+    position: absolute;
+    right: 0;
+    text-indent: -9999px;
+    opacity: 0;
+  }
+}
+
+@media(max-width: 767px) {
+  .country-map {
+    margin: 15px 0;
+  }
+  .intro {
+    height: auto;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    &.has-map {
+      height: auto;
+      padding-bottom: 40px;
+      padding-top: 40px;
+    }
+    &.jobs-intro {
+      padding-top: 0;
+      padding-bottom: 0;
+      height: auto;
+    }
+    .col-sm-4 {
+      margin-bottom: 15px;
+    }
+  }
+  h1 {
+    font-size: 24px;
+    line-height: 25px;
+  }
+  h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  h4 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .hidden-xs {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  .text-center-xs {
+    text-align: center;
+  }
+  .table-action {
+    display: block;
+    margin-bottom: 15px;
+    padding: 15px 15px 0;
+  }
+  .search-row-wrapper {
+    .col-md-3 {
+      margin-bottom: 10px;
+      display: inline-flex;
+      width: 100%;
+    }
+    .selecter {
+      max-width: 100%;
+    }
+  }
+  .cat-list {
+    margin-bottom: 15px;
+    ul {
+      display: none;
+    }
+  }
+  .btn-cat-collapsed {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    text-indent: 0;
+    opacity: 1;
+    cursor: pointer;
+  }
+  .xs-gap {
+    margin-bottom: 15px;
+  }
+  .icon-down-open-big {
+    display: inherit;
+    transform: rotate(00deg);
+    transition: all 0.3s ease-in;
+    &.active-panel {
+      transform: rotate(90deg);
+    }
+  }
+  .hasOverly > div {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+  .navbar-default .navbar-nav > li > a.btn-post {
+    color: $white;
+  }
+}
+
+@media(max-width: 580px) {
+  .hdata {
+    display: inline-block;
+    margin-right: 4px;
+    width: 80px;
+  }
+  .useradmin {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .page-content .table-bordered {
+    border-top: $border;
+  }
+}
+
+@media(max-width: 480px) {
+  .col-xxs-12 {
+    width: 100%;
+  }
+  .col-xxs-6 {
+    width: 50%;
+  }
+  .text-center-xxs {
+    text-align: center;
+  }
+  .text-center-480 {
+    text-align: center;
+  }
+  .userImg {
+    width: 54px;
+  }
+  .table-action {
+    text-align: center;
+  }
+  .table-search {
+    margin-top: 10px;
+    padding: 0;
+    width: 100%;
+  }
+  .header-data {
+    border-top: $border;
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+  .tab-filter {
+    .select-sort-by {
+      margin-right: 10px;
+      margin-top: 9px;
+      min-width: 115px !important;
+    }
+    .selecter-item {
+      font-size: 11px;
+      margin: 0;
+      overflow: hidden;
+      padding: 5px 10px;
+    }
+    .selecter-selected:after {
+      right: 4px;
+    }
+  }
+  .select-sort-by .selecter-selected {
+    font-size: 11px;
+    padding: 4.5px 8px;
+  }
+}
+
+@media(max-width: 320px) {
+  .hdata {
+    display: inline-block;
+    margin-right: 2px;
+    width: 70px;
+    i {
+      border-radius: 50px;
+      box-shadow: 0 0 1px #777 inset;
+      color: $white;
+      display: inline-block;
+      font-size: 14px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      width: 30px;
+    }
+  }
+  .container {
+    min-width: 300px;
+  }
+  body {
+    min-width: 300px;
+  }
+  html {
+    min-width: 300px;
+  }
+  .navbar .container {
+    padding-left: 5px;
+  }
+}
+
+@media(max-width: 300px) {
+  .container {
+    width: 300px;
+  }
+  body {
+    width: 300px;
+  }
+  html {
+    width: 300px;
+  }
+}
+
+@media only screen and(max-width: 400px) {
+  .tab-filter {
+    width: 100px;
+    right: 5px;
+    .select-sort-by {
+      min-width: 80px !important;
+      width: 100% !important;
+    }
+  }
+  .nav-tabs.add-tabs > li > a {
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .select-sort-by .selecter-selected {
+    font-size: 9px;
+  }
+}
+
+.navbar-site {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1001;
+}

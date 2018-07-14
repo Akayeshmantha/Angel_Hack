@@ -1,0 +1,44 @@
+/* =============================================================== */
+/* CONTACT
+/* =============================================================== */
+
+.intro-inner {
+  width: 100%;
+  clear: both;
+  height: 350px;
+  overflow: hidden;
+}
+.social-list {
+  margin-top: 20px;
+  a {
+    margin-right: 10px;
+    display: inline-block;
+  }
+}
+.address p {
+  margin-bottom: 0;
+}
+
+.contact_info, .contact-form {
+  .list-title {
+    &:before {
+      border-color: #ddd transparent transparent;
+    }
+    &:after {
+      border-color: #EEEEEE transparent transparent;
+    }
+  }
+}
+
+.contact-form {
+  .form-horizontal {
+    display: block;
+    margin-top: 20px;
+  }
+}
+
+.contact-info  {
+  .address {
+    margin-top: 20px;
+  }
+}

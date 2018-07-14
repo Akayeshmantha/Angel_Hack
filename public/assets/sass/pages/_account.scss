@@ -1,0 +1,354 @@
+.panel-intro {
+  padding: 40px 0 25px;
+  h2 {
+    padding: 0;
+  }
+}
+.login-box-btm {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.input-icon {
+  position: relative;
+  input {
+    padding-left: 45px;
+  }
+  i {
+    font-size: 16px;
+    left: 6px;
+    line-height: 22px;
+    position: absolute;
+    top: 9px;
+  }
+}
+.promo-text-box {
+  padding: 15px 20px;
+  h3 {
+    margin-top: 10px;
+    padding-bottom: 15px;
+  }
+}
+.icon-color-1 {
+  color: #ff9113;
+}
+.icon-color-2 {
+  color: #e6c840;
+}
+.icon-color-3 {
+  color: #74c29b;
+}
+div.login-box {
+  float: none;
+  margin: 0 auto;
+  clear: both;
+  .panel-body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .panel-footer {
+    p {
+      margin-top: 10px;
+    }
+    label {
+      font-weight: normal;
+    }
+  }
+}
+.login-box .input-icon i {
+  color: #555;
+  opacity: 0.6;
+  border-right: 1px solid #ccc;
+  padding-right: 5px;
+}
+
+
+/* =============================================================== */
+/* POST ADS
+/* =============================================================== */
+
+.content-subheading {
+  border-bottom: $border;
+  border-top: $border;
+  color: #333;
+  font-size: 18px;
+  line-height: 20px;
+  margin: 30px -20px;
+  padding: 13px 20px;
+}
+.visible-lg-block {
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  color: #468847;
+}
+.alert-lg {
+  font-size: 22px;
+}
+.pgray p {
+  color: #666;
+  font-size: 14px;
+}
+.alert.pgray p {
+  padding-left: 25px;
+}
+
+/* =============================================================== */
+/* USER DASHBOARD
+/* =============================================================== */
+
+.userImg {
+  border: $border;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 3px;
+  width: 64px;
+}
+.header-data {
+  margin-top: 10px;
+  text-align: right;
+  p {
+    margin-bottom: 0;
+  }
+}
+.hdata {
+  display: inline-block;
+  margin-right: 15px;
+  width: 85px;
+  i {
+    border-radius: 50px;
+    box-shadow: 0 0 1px #777 inset;
+    color: #fff;
+    display: inline-block;
+    font-size: 17px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+  }
+  a {
+    color: #666;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+    margin-top: 3px;
+    text-align: left;
+  }
+  em {
+    display: block;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+  }
+}
+.mcol-left {
+  float: left;
+  width: 48%;
+}
+.mcol-right {
+  float: right;
+  width: 48%;
+}
+
+/* =============================================================== */
+/* USER PANEL || ACCOUNT
+/* =============================================================== */
+
+
+.panel-title {
+  padding-bottom: 0;
+}
+.userPicinput {
+  display: inline-block;
+  float: left;
+  margin-top: 30px;
+}
+.userPic {
+  display: inline-block;
+}
+.datepickerInput {
+  border: 1px solid #bdc3c7;
+  border-radius: 3px;
+  color: #666666;
+  padding: 7px 12px;
+}
+.welcome-msg {
+  margin-bottom: 30px;
+}
+.collapse-box {
+  margin-bottom: 15px;
+  .badge {
+    background-color: #e3e3e3;
+    color: #666;
+    font-weight: normal;
+  }
+}
+.collapse-title {
+  border-top: 1px solid #e6e6e6;
+  color: #2a3744;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 10px;
+  padding-top: 15px;
+  text-transform: uppercase;
+  > a {
+      i {
+        transition: all ease 0.2s;
+        transform: rotate(0deg);
+      }
+
+    &[aria-expanded="false"] {
+      i {
+        transform: rotate(90deg);
+      }
+    }
+
+  }
+}
+.no-border {
+  border: none;
+}
+.statusbar {
+  margin-bottom: 35px;
+  p {
+    margin-bottom: 0;
+  }
+}
+.add-manage-table {
+  font-weight: normal;
+}
+.table-action {
+  display: block;
+  margin-bottom: 15px;
+}
+.table-search {
+  .searchpan {
+    padding-right: 0;
+  }
+  .control-label {
+    line-height: 16px;
+    padding-right: 0;
+  }
+}
+.clear-filter {
+  font-size: 11px;
+}
+.price-td {
+  font-size: 16px;
+}
+.delete-search-result {
+  color: #555;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: lighter;
+  margin-right: 5px;
+  position: absolute;
+  top: 7px;
+  right: 3px;
+  &:hover {
+    color: #000;
+  }
+}
+.user-panel-sidebar ul {
+  padding: 0;
+  li {
+    list-style: none;
+    a {
+      background:  #ffffff;
+      display: block;
+      font-family: $base-font-condensed;
+      color: #2a3744;
+      font-size: 12px;
+      height: auto;
+      letter-spacing: 0.5px;
+      line-height: 26px;
+      padding: 5px 10px;
+      margin-bottom: 1px;
+      text-align: left;
+      text-decoration: none;
+      text-transform: uppercase;
+      &:hover {
+        background-color: #2a3744;
+        color: #ffffff;
+      }
+      &:active {
+        background-color: #2a3744;
+        color: #ffffff;
+      }
+      &.active {
+        background-color: #2a3744;
+        color: #ffffff;
+      }
+    }
+    &.active a {
+      background-color: #2a3744;
+      color: #ffffff;
+    }
+  }
+}
+li.divider {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.accountContent h3 {
+  border-bottom: 1px solid #e6e6e6;
+  color: #2a3744;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 0.25px;
+  margin-top: 0;
+  padding-bottom: 15px;
+}
+.litedver-ul li {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+.searchpan input#filter {
+  font-size: 12px;
+  height: 30px;
+}
+table.add-manage-table > tbody > tr {
+  > td {
+    vertical-align: middle;
+  }
+  > th {
+    vertical-align: middle;
+  }
+}
+.add-img-td img {
+  max-width: 100px;
+}
+.action-td .btn {
+  clear: both;
+}
+td.ads-details-td {
+  white-space: inherit !important;
+  min-width: 160px;
+}
+.list-group-unstyle .list-group-item {
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  border-bottom: $border;
+  &.active , &:hover {
+    background: #f5f5f5;
+    color: #000;
+    font-weight: bold;
+    border-bottom: $border;
+    a {
+      color: #000;
+    }
+  }
+}
+
+
