@@ -25,6 +25,7 @@ var obj = {
     }
 
 $(document).ready(function() {
+
     appendRules("#rules", rules_it);
 
 
@@ -72,7 +73,9 @@ $.ajax(settings).done(function (response) {
   console.log("obj");
   console.log(obj)
 
-  console.log(response);
+   swal("Your post has been posted", "", "success").then((value) => {
+ location.reload();
+});
 });
 
 
