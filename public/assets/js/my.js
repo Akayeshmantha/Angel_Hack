@@ -73,7 +73,7 @@ $.ajax(settings).done(function (response) {
   console.log("obj");
   console.log(obj)
 
-   swal("Your order has been added to the order queue", "", "success").then((value) => {
+   swal("Your order has been added to the Network", "", "success").then((value) => {
  location.reload();
 });
 });
