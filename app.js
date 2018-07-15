@@ -18,7 +18,7 @@ app.use(express.static(__dirname + "/public"));
 let router = express.Router();
 
 router.get("/", function(req, res) {
-    res.json({ message: "welcome to praedictio server!" });
+    res.json({ message: "Welcome to Smart-Trade server!" });
 });
 
 router.use(function(req, res, next) {

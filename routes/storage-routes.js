@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const BlockChainClient = require('mongodb').MongoClient;
-// const S3_helper = require('../aws/storage/S3Helper');
 const formidable = require('formidable');
 const fs = require('fs');
 const url = 'mongodb://34.240.0.138:27017';
