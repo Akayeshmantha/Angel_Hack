@@ -227,6 +227,11 @@ button:hover {
   <div class="tab">
     Select a product to procure:
     <br><br>
+    
+    <p>
+       <input type="text" name="order_title" id="order_title" class="form-control" placeholder="Order title"> 
+
+    </p>
     <p>
       <select id="industry" class="form-control">
         <option>
@@ -251,6 +256,11 @@ button:hover {
       </select>
 
     </p>
+<p>
+       <textarea style="height: 100px;" class="form-control" id="order_desc" placeholder="Order description"></textarea> 
+
+    </p>
+
   </div>
   <div class="tab">Upload Procument Documents:
       
@@ -285,7 +295,7 @@ button:hover {
   </div>
   <div class="tab">Create you smart contract:
     <br><br>
-    <button type="button"  onclick="CreateNewRule('#customRules')">Add your rules</button>
+    <button type="button"  onclick="CreateNewRule('#customRules')">Add custom conditions</button>
     <div class="contract-wrapper">
       <div class="row">
           <div class="col-md-8">
@@ -318,10 +328,25 @@ button:hover {
 
 
   </div>
-  <div class="tab">Login Info:
+  <div class="tab">
+    <br><br>
       <div id="smartc">
-          
-
+            <div class="row">
+              <div class="col-md-5">
+                    Order ID :
+              </div>
+              <div class="col-md-7">
+                  <p id="order_id_view"></p>
+              </div>
+          </div>
+        <div class="row">
+              <div class="col-md-5">
+                    Order Title :
+              </div>
+              <div class="col-md-7">
+                  <p id="order_title_view"></p>
+              </div>
+          </div>
           <div class="row">
               <div class="col-md-5">
                     Industry :
@@ -339,7 +364,14 @@ button:hover {
                   <p id="product-view"></p>
               </div>
           </div>
-
+          <div class="row">
+              <div class="col-md-5">
+                    Order Description :
+              </div>
+              <div class="col-md-7">
+                  <p id="order_desc_view"></p>
+              </div>
+          </div>
 
           <div class="" id="pre_rules">
             
