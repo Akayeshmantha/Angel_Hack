@@ -6,8 +6,8 @@ var rules_it = [
         displayName: "Minimum cost"
     },
     {
-        filedName: "warranty",
-        displayName: "Warranty period"
+        filedName: "suppleir_ratings",
+        displayName: "Suppleir ratings"
     },
     {
         filedName: "service_period",
