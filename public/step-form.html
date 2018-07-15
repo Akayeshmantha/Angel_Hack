@@ -167,7 +167,7 @@ button:hover {
       
                   <li class="dropdown no-arrow nav-item"><a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
 
-        						<span>Jhon Doe</span> <i class="icon-user fa"></i> <i class=" icon-down-open-big fa"></i></a>
+        						<span>Ayantha Philip</span> <i class="icon-user fa"></i> <i class=" icon-down-open-big fa"></i></a>
         						<ul
         								class="dropdown-menu user-menu dropdown-menu-right">
         							<li class="active dropdown-item"><a href="account-home.html"><i class="icon-home"></i> Personal Home
@@ -225,8 +225,13 @@ button:hover {
 <form style="margin-bottom:20px" id="form1" method="post" action="">
   <!-- One "tab" for each step in the form: -->
   <div class="tab">
-    Select Industry:
+    Select a product to procure:
     <br><br>
+    
+    <p>
+       <input type="text" name="order_title" id="order_title" class="form-control" placeholder="Order title"> 
+
+    </p>
     <p>
       <select id="industry" class="form-control">
         <option>
@@ -236,6 +241,10 @@ button:hover {
 				<option value="office">Office Supplies</option>
 				<option>Electronics</option>
 				<option>Construction</option>
+				<option>Medical</option>
+				<option>Electrical</option>
+				<option>Property</option>
+				<option>FMCG</option>
       </select>
     </p>
     <p>
@@ -247,6 +256,11 @@ button:hover {
       </select>
 
     </p>
+<p>
+       <textarea style="height: 100px;" class="form-control" id="order_desc" placeholder="Order description"></textarea> 
+
+    </p>
+
   </div>
   <div class="tab">Upload Procument Documents:
       
@@ -281,7 +295,7 @@ button:hover {
   </div>
   <div class="tab">Create you smart contract:
     <br><br>
-    <button type="button"  onclick="CreateNewRule('#customRules')">Add your rules</button>
+    <button type="button"  onclick="CreateNewRule('#customRules')">Add custom conditions</button>
     <div class="contract-wrapper">
       <div class="row">
           <div class="col-md-8">
@@ -314,10 +328,25 @@ button:hover {
 
 
   </div>
-  <div class="tab">Login Info:
+  <div class="tab">
+    <br><br>
       <div id="smartc">
-          
-
+            <div class="row">
+              <div class="col-md-5">
+                    Order ID :
+              </div>
+              <div class="col-md-7">
+                  <p id="order_id_view"></p>
+              </div>
+          </div>
+        <div class="row">
+              <div class="col-md-5">
+                    Order Title :
+              </div>
+              <div class="col-md-7">
+                  <p id="order_title_view"></p>
+              </div>
+          </div>
           <div class="row">
               <div class="col-md-5">
                     Industry :
@@ -335,7 +364,14 @@ button:hover {
                   <p id="product-view"></p>
               </div>
           </div>
-
+          <div class="row">
+              <div class="col-md-5">
+                    Order Description :
+              </div>
+              <div class="col-md-7">
+                  <p id="order_desc_view"></p>
+              </div>
+          </div>
 
           <div class="" id="pre_rules">
             
@@ -385,23 +421,22 @@ button:hover {
                     <div class="reg-sidebar-inner text-center">
                         <div class="promo-text-box"><i class=" icon-picture fa fa-4x icon-color-1"></i>
 
-                            <h3><strong>Post a Free Classified</strong></h3>
+                            <h3><strong>Post a Procument Order</strong></h3>
 
-                            <p> Post your free online classified ads with us. Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. </p>
+                            <p> Post your procument orders in our secure, transparent platform to streamline your complex procument process.
+                            </p>
                         </div>
 
                         <div class="card sidebar-card">
                             <div class="card-header uppercase">
-                                <small><strong>How to sell quickly?</strong></small>
+                                <small><strong>How to attract best suppliers?</strong></small>
                             </div>
                             <div class="card-content">
                                 <div class="card-body text-left">
                                     <ul class="list-check">
-                                        <li> Use a brief title and description of the item</li>
+                                        <li> Use a concise title and description of the item</li>
                                         <li> Make sure you post in the correct category</li>
-                                        <li> Add nice photos to your ad</li>
-                                        <li> Put a reasonable price</li>
+                                        <li> Add procument conditions/rules consistently</li>
                                         <li> Check the item before publish</li>
 
                                     </ul>

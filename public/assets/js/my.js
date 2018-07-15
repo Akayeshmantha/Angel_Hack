@@ -6,8 +6,8 @@ var rules_it = [
         displayName: "Minimum cost"
     },
     {
-        filedName: "suppleir_ratings",
-        displayName: "Suppleir ratings"
+        filedName: "supplier_ratings",
+        displayName: "supplier ratings"
     },
     {
         filedName: "service_period",
@@ -73,7 +73,7 @@ $.ajax(settings).done(function (response) {
   console.log("obj");
   console.log(obj)
 
-   swal("Your order has been added to the order queue", "", "success").then((value) => {
+   swal("Your order has been added to the Network", "", "success").then((value) => {
  location.reload();
 });
 });
@@ -206,7 +206,8 @@ function appendToASelect(id, arr) {
 function generateSmartContract(){
     var industryName = $("#industry").val() == "it" ? "IT Products" : "Office Suplies";
     var productName = $("#product").val();
-
+    var orderTitle = $("#order_title").val();
+    var orderDesc = $("#order_desc").val();
     
 
     obj.industryName = industryName;
@@ -273,6 +274,11 @@ obj.post_rules.push(
 console.log(obj)
     $("#indestry-view").html(industryName)
     $("#product-view").html(productName)
+$("#order_id_view").html( Math.floor((Math.random() * 99999) + 1))
+
+$("#order_title_view").html(orderTitle);
+$("#order_desc_view").html(orderDesc);
+
 }
 
 
